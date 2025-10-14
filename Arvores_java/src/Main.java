@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         int[] elements = {1, 2, 3, 10, 4, 5, 9, 7, 8, 6};
 
-        // Árvore Binária de Busca (BST)
         System.out.println("=== Árvore Binária de Busca (BST) ===");
         BinarySearchTree bst = new BinarySearchTree();
         for (int elem : elements) {
@@ -15,7 +14,6 @@ public class Main {
         System.out.println("\nEstrutura da BST:");
         bst.display(bst.root, "", true);
 
-        // Árvore AVL (Auto-balanceada)
         System.out.println("\n=== Árvore AVL (Auto-balanceada) ===");
         AVLTree avl = new AVLTree();
         for (int elem : elements) {
