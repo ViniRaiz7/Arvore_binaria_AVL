@@ -8,8 +8,7 @@ public class BinarySearchTree {
     }
 
     Node root;
-
-    // Inserção na árvore binária de busca
+    
     Node insert(Node node, int value) {
         if (node == null)
             return new Node(value);
@@ -20,16 +19,13 @@ public class BinarySearchTree {
         return node;
     }
 
-    // Travessia em ordem
     void inOrder(Node node) {
         if (node != null) {
             inOrder(node.left);
             System.out.print(node.value + " ");
             inOrder(node.right);
         }
-    }
 
-    // Exibição textual da árvore
     void display(Node node, String prefix, boolean isTail) {
         if (node == null) return;
         System.out.println(prefix + (isTail ? "└── " : "├── ") + node.value);
